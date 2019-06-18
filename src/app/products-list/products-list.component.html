@@ -1,0 +1,6 @@
+<mat-grid-list cols="{{nbOfRandomItems}}" >
+  <div *ngFor="let product of products">
+      <mat-grid-tile><app-product-card [product]="product"></app-product-card></mat-grid-tile>
+      
+  </div>
+</mat-grid-list>

@@ -1,0 +1,24 @@
+<mat-grid-list cols="2">
+    <mat-grid-tile>
+        <div class="example-container">
+
+          
+        <mat-form-field>
+            <input matInput placeholder="Imie Nazwisko">
+          </mat-form-field>
+      
+          <mat-form-field>
+              <input matInput placeholder="Enter your email" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+              <textarea matInput placeholder="Textarea"></textarea>
+            </mat-form-field>
+          </div>
+    </mat-grid-tile>
+    <mat-grid-tile>google maps kerere</mat-grid-tile>
+
+</mat-grid-list>
+
+
+  
